@@ -3,8 +3,6 @@ get_header()
 ?>
 
 
-
-
 <div class='about-divide'>
 
 
