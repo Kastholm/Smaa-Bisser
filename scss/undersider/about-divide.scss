@@ -1,0 +1,113 @@
+.about-divide {
+  /*  width: 100%; */
+  /* max-width: 1315px;
+     margin: 0  auto; */
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(max(35%, 17rem), 1fr));
+  background-color: #ebe1da;
+  padding: 0 2.5em;
+  /* margin: 0em 1em; */
+  br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 30%;
+  }
+  @include mq_tablet {
+    padding: 0 2em;
+    grid-template-columns: repeat(auto-fit, minmax(max(35%, 21rem), 1fr));
+  }
+  @include mq_phone {
+    padding: 0 0em;
+  }
+  .about-text {
+    display: grid;
+    padding: 2em;
+    place-content: center;
+
+    @include mq_tablet {
+    }
+    @include mq_phone {
+    }
+    h1 {
+      font-size: 2rem;
+      font-family: "Klarheit Kurrent", sans-serif;
+      line-height: 2.4rem;
+      letter-spacing: 0.01rem;
+      font-weight: 500;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-family: SimonCircularPro-Lightitalic, sans-serif;
+      line-height: 1.4rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 0.65rem;
+      font-family: Brown, sans-serif;
+      font-weight: 400;
+      max-width: 32em;
+      @include mq_tablet {
+        max-width: 52em;
+        font-size: 1rem;
+        line-height: 1.6rem;
+      }
+      @include mq_phone {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+      }
+      margin: 0.7em 0 1.5em 0;
+      line-height: 1.2rem;
+      letter-spacing: 0.01rem;
+    }
+  }
+  .about-img {
+    background-image: url("https://images.pexels.com/photos/3912354/pexels-photo-3912354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 94% 0, 100% 100%, 6% 100%);
+    /* clip-path: polygon(21% 6%, 79% 6%, 100% 20%, 100% 80%, 80% 94%, 21% 94%, 0% 80%, 0% 20%); */
+    /* clip-path: polygon(7% 4%, 96% 4%, 93% 96%, 4% 96%); */
+    min-height: 20em;
+    @include mq_tablet {
+      grid-row: 1;
+    }
+    @include mq_phone {
+      grid-row: 1;
+    }
+  }
+}
+.bg-art {
+  background-image: url("https://i.ibb.co/FWMSVqJ/sm-bisser-banner.gif");
+}
+
+.dividetwo {
+  .about-text {
+  }
+  .about-img {
+    background-image: url("https://images.pexels.com/photos/53590/baby-caucasian-child-daughter-53590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 94% 0, 100% 100%, 6% 100%);
+    grid-row: 1;
+    min-height: 20em;
+  }
+}
+.dividethree {
+  .about-img {
+    background-image: url("https://images.pexels.com/photos/12117915/pexels-photo-12117915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
+}
+
+.dividefour {
+  max-width: 1315px;
+  margin: 0 auto;
+  .about-img {
+    clip-path: none;
+  }
+}

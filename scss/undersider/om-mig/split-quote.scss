@@ -1,0 +1,38 @@
+.split-quote {
+  padding: 5em;
+  margin: 0 -0.5em;
+  text-align: center;
+  background-image: url("https://i.ibb.co/FWMSVqJ/sm-bisser-banner.gif");
+  background-position: center 80%;
+  /* clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%); */
+  color: white;
+  @include mq_tablet {
+    padding: 5em 2em;
+  }
+  @include mq_phone {
+    padding: 5em 2em;
+  }
+  h3 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: "SimonCircularPro-Lightitalic", "sans-serif";
+    line-height: 1.8rem;
+    letter-spacing: 0.03rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    @include mq_tablet {
+      font-size: 1rem;
+    }
+    @include mq_phone {
+      font-size: 1rem;
+    }
+    max-width: 30em;
+
+    margin: 0 auto;
+  }
+  p {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+}

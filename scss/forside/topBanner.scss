@@ -1,0 +1,181 @@
+@import "../default.scss";
+
+.top-bg {
+  /*  background-image: url("https://i.ibb.co/FWMSVqJ/sm-bisser-banner.gif"); */
+  background-size: contain;
+}
+
+.banner {
+  position: relative;
+  height: 26em;
+  z-index: 2;
+  background-image: url("https://i.ibb.co/FWMSVqJ/sm-bisser-banner.gif");
+  color: white;
+  background-size: cover;
+  background-position: bottom;
+  margin: 0 -0.5em;
+  @include mq_tablet {
+    background-size: cover;
+    height: 32em;
+  }
+  @include mq_phone {
+    background-size: cover;
+    height: 40em;
+    background-image: none;
+  }
+  br {
+    @include mq_phone {
+      display: none;
+    }
+  }
+  .bog {
+    width: 15em;
+    z-index: -1;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transform: rotate(20deg);
+    box-shadow: 4.8px 9.6px 9.6px hsl(0deg 0% 0% / 0.35);
+    @include mq_tablet {
+      bottom: 25%;
+    }
+    @include mq_phone {
+      bottom: 39%;
+      right: 4%;
+      width: 13em;
+    }
+  }
+  .banner-text-field {
+    height: 26em;
+    width: fit-content;
+    margin-left: 5em;
+    padding-top: 3em;
+    @include mq_tablet {
+      margin-left: 2em;
+    }
+    @include mq_phone {
+      margin-left: 0em;
+      padding-top: 3em;
+    }
+    .pure-text {
+      @include mq_phone {
+        margin-left: 1em;
+        width: 75vw;
+      }
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    /* font-family: 'Brown', sans-serif; */
+    font-family: "Klarheit Kurrent";
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    /* &::after {
+      content: "Køb bogen nu";
+      position: absolute;
+      bottom: 17%;
+      color: rgb(228, 101, 207);
+      font-size: 1rem;
+      transform: rotate(-30deg);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+    } */
+  }
+  h2 {
+    font-size: 0.8rem;
+    font-family: "Brown", "sans-serif";
+    font-weight: 400;
+    margin: 0.7em 0 1.5em 0;
+    line-height: 1.1rem;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.03rem;
+  }
+  button {
+    margin-bottom: 1em;
+    @include mq_phone {
+      transform: scale(1.15);
+      margin-left: 0.2em;
+    }
+  }
+  .tand-button {
+    position: relative;
+  }
+  .tand {
+    position: absolute;
+    bottom: -60%;
+    width: 5em;
+  }
+}
+.logo-flex {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(max(25%, 2rem), 0.5fr));
+  margin-top: 1em;
+  @include mq_phone {
+    width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(max(25%, 25rem), 1fr));
+    margin-top: 5em;
+  }
+  img {
+    margin: 0 auto;
+    width: 4em;
+    padding: 0.5em;
+    border-radius: 60px;
+    background-color: #ffffff;
+    @include mq_tablet {
+      width: 5em;
+    }
+    @include mq_phone {
+      width: 6em;
+      border-radius: 0px;
+    }
+  }
+  span {
+    width: fit-content;
+    display: grid;
+
+    place-content: center;
+    /* margin: 0 1em 0 0; */
+    text-align: center;
+    /* background-color: #ffffff; */
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    min-width: 7em;
+    @include mq_tablet {
+      min-width: 8em;
+      margin: 0 0.2em;
+    }
+    @include mq_phone {
+      background-color: rgb(255, 255, 255);
+      margin: 0;
+      margin-top: 0em;
+
+      margin-bottom: 0.2em;
+      padding: 0.5em 0;
+      width: 100vw;
+      color: black;
+      border-radius: 0px;
+      /* clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0 99%); */
+    }
+
+    p {
+      font-family: "Brown", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 0.4em;
+      font-weight: 600;
+    }
+  }
+}
+
+.elementor-303
+  .elementor-element.elementor-element-46f0c29e
+  .elementor-posts-container
+  .elementor-post__thumbnail {
+  padding-bottom: calc(0.7 * 100%) !important;
+}
